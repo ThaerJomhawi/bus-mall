@@ -1,0 +1,78 @@
+header , footer{
+    background-color: rgba(53, 168, 130, 0.712);
+    opacity: 60%;
+    height: 140px;
+    text-align: center;
+    
+    }
+    
+    
+    h1 {
+        font-size: xx-large;
+        top: 30px;
+        position: relative;
+        font-weight: bolder;
+        color: rgb(238, 238, 245);
+    }
+    
+    h2{
+        font-size: xx-large;
+        top: 50px;
+        position: relative;
+        font-weight: bolder;
+        color: rgb(238, 238, 245);
+    
+    }
+    
+    
+    #container{
+        max-width: 90%;
+        margin: 100px auto;
+        text-align: center;
+    }
+    
+    
+    
+    
+    #containerTwo{
+        max-width: 90%;
+        text-align: center;
+        max-height: 400px ;
+    }
+    
+    img {
+        width: 300px;
+        height: 300px;
+        border: 3px solid rgba(53, 168, 130, 0.712);
+        box-shadow: 3px 3px 6px #0000006b;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+      }
+    
+    
+    
+    button{
+    
+        width: 150px;
+        height: 50px;
+        background-color: rgba(53, 168, 130, 0.712);
+        margin-left: 135px;
+        border-radius: 5px;
+        box-shadow: 3px 3px 6px #dfd9d96b;
+        border-color: cornflowerblue;
+        margin-bottom: 20px;
+        
+    }
+    
+    
+    
+    table ,tr, th, td{
+        border:3px solid rgba(53, 168, 130, 0.712);
+    }
+    
+    table{
+        margin-left: 130px;
+        margin-bottom: 20px;
+        color: black;
+    }
