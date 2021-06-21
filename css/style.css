@@ -69,10 +69,16 @@ header , footer{
     
     table ,tr, th, td{
         border:3px solid rgba(53, 168, 130, 0.712);
+        font-size: 20px;
+        text-align: center;
+        
     }
     
     table{
         margin-left: 130px;
         margin-bottom: 20px;
         color: black;
+        background-color:rgba(53, 168, 130, 0.151) ;
     }
+
+    canvas { border:5px solid rgba(53, 168, 130, 0.712);}
