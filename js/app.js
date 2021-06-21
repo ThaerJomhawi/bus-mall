@@ -92,6 +92,7 @@ function randomImg() {
     Products.all[threeIndex].views++;
   }
 
+  
 }
 
 randomImg();
@@ -198,7 +199,59 @@ function buttonClick() {
 
   }
 
-  
+  drawChart();
 
 }
 
+let viewsArr = [];
+  let votesArr = [];
+
+  
+function drawChart() {
+
+  
+
+  for (let i = 0; i < names.length; i++) {
+    viewsArr.push(Products.all[i].views);
+    votesArr.push(Products.all[i].votes);
+  }
+
+
+  let ctx = document.getElementById('myChart').getContext('2d');
+
+
+
+  let chart = new Chart(ctx, {
+
+    type: 'bar',
+
+    data: {
+      labels: names,
+      datasets: [{
+        label: 'votes',
+        backgroundColor: 'rgb(255, 99, 132)',
+        borderColor: 'rgb(255, 99, 132)',
+        data: votesArr,
+      },
+      {
+        label: 'views',
+        backgroundColor: 'rgb(135, 99, 255)',
+        borderColor: 'rgb(255, 99, 132)',
+        data: viewsArr,
+      }]
+    },
+
+
+    options: {
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    }
+  });
+}
+console.log(viewsArr);
+  console.log(votesArr);
