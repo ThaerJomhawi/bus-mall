@@ -90,7 +90,7 @@ function render() {
     Products.allProducts[indexThree].views++;
   }
 
-  
+
 }
 
 render();
@@ -149,36 +149,28 @@ function renderResult() {
 }
 
 
-
-
-
 function showResult() {
 
   renderResult();
+  drawChart();
 
- }
-
-
-
-
+}
 
 
 let viewsArr = [];
-  let votesArr = [];
+let votesArr = [];
 
-  
+
 function drawChart() {
 
-  
 
-  for (let i = 0; i < names.length; i++) {
-    viewsArr.push(Products.all[i].views);
-    votesArr.push(Products.all[i].votes);
+  for (let i = 0; i < Products.allProducts.length; i++) {
+    viewsArr.push(Products.allProducts[i].views);
+    votesArr.push(Products.allProducts[i].votes);
   }
 
 
   let ctx = document.getElementById('myChart').getContext('2d');
-
 
 
   let chart = new Chart(ctx, {
@@ -214,4 +206,4 @@ function drawChart() {
   });
 }
 console.log(viewsArr);
-  console.log(votesArr);
+console.log(votesArr);
