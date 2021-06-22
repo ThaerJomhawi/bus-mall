@@ -57,22 +57,43 @@ header , footer{
         width: 150px;
         height: 50px;
         background-color: rgba(53, 168, 130, 0.712);
-        margin-left: 135px;
+        margin-left: 600px;
         border-radius: 5px;
         box-shadow: 3px 3px 6px #dfd9d96b;
         border-color: cornflowerblue;
         margin-bottom: 20px;
+        font-size: 25px;
+        color:rgb(238, 238, 245);
         
     }
     
-    
-    
-    table ,tr, th, td{
-        border:3px solid rgba(53, 168, 130, 0.712);
+    #resultList{
+
+        width: 210px;
+        position: absolute;
+        z-index: 1;
+        top: 140px;
+        left: 0px;
+        overflow-x: hidden;
+        padding: 8px 0;
+       
     }
+
+    ul li {
+        background: rgba(100, 148, 237, 0.151);
+        margin: 5px;
+        color:rgb(50, 50, 107);
+        font-size: 15px;
+        font-weight: bold;
+        
+      }
+
+      ul {
+        background: rgb(238, 238, 245);
+        padding: 20px;
+      }
+      
     
-    table{
-        margin-left: 130px;
-        margin-bottom: 20px;
-        color: black;
-    }
+    
+
+   
