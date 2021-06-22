@@ -67,6 +67,7 @@ header , footer{
         
     }
     
+
     #resultList{
 
         width: 210px;
@@ -77,6 +78,7 @@ header , footer{
         overflow-x: hidden;
         padding: 8px 0;
        
+
     }
 
     ul li {
@@ -93,7 +95,4 @@ header , footer{
         padding: 20px;
       }
       
-    
-    
 
-   
