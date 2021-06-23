@@ -43,7 +43,7 @@ for (let i = 0; i < names.length; i++) {
   new Products(names[i], `../assets/${imgArr[i]}`);
 }
 
-console.log(Products.allProducts);
+
 
 
 
@@ -99,6 +99,7 @@ render();
 container.addEventListener('click', clicker);
 
 function clicker(event) {
+  
 
   if (event.target.id !== 'container') {
 
@@ -150,7 +151,7 @@ function renderResult() {
 
 
 function showResult() {
-
+  setData();
   renderResult();
   drawChart();
 
@@ -205,5 +206,26 @@ function drawChart() {
     }
   });
 }
-console.log(viewsArr);
-console.log(votesArr);
+
+function setData() {
+
+  let dataSet = JSON.stringify(Products.allProducts);
+  localStorage.setItem('dataArr', dataSet);
+
+  console.log(dataSet);
+}
+
+
+
+function getData() {
+
+  let dataGet = localStorage.getItem('dataArr');
+  console.log(dataGet);
+  let parsedData = JSON.parse(dataGet);
+  console.log(parsedData);
+  Products.allProducts = parsedData;
+  render();
+ 
+}
+
+getData();
