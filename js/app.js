@@ -40,7 +40,7 @@ function Products(name, path) {
 Products.allProducts = [];
 
 for (let i = 0; i < names.length; i++) {
-  new Products(names[i], `../assets/${imgArr[i]}`);
+  new Products(names[i], `./assets/${imgArr[i]}`);
 }
 
 
@@ -154,6 +154,7 @@ function showResult() {
   setData();
   renderResult();
   drawChart();
+ 
 
 }
 
@@ -224,7 +225,7 @@ function getData() {
   let parsedData = JSON.parse(dataGet);
   console.log(parsedData);
   Products.allProducts = parsedData;
-  render();
+  
  
 }
 
