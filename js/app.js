@@ -224,8 +224,9 @@ function getData() {
   console.log(dataGet);
   let parsedData = JSON.parse(dataGet);
   console.log(parsedData);
+  if(parsedData) {
   Products.allProducts = parsedData;
-  
+  }
  
 }
 
